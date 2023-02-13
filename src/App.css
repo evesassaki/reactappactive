@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* NavBar */
+.navbar{
+  font-size: 20px;
+  height: 90px;
+  box-shadow: 10px 0 10px rgb(0, 0, 0);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar button{
+  height: 50px;
+  width: 100px;
+}
+
+/*Footer*/
+.footer{
+  padding-top: 15px;
+}
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-media-footer {
+    text-align: right;
+    font-size: 2rem;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  /*Social media icons*/
+  .facebook-icon:hover {
+    color: blue;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .instagram-icon:hover {
+    color:plum;
   }
+  
+  .whatsapp-icon:hover {
+    color: green;
+  }
+
+  .social-media-icon a {
+    border-radius: 50%;
+    padding: 0 5px;
+  }
+
+  /*Active underline div*/
+  .underline {
+    height: 4px;
+    width: 10rem;
+    background: rgb(20,69,167);
+    background: linear-gradient(90deg, rgba(20,69,167,1) 50%, rgba(84,227,70,1) 100%);
+    margin: 10px 0;
+  }
+
+  .home-social a{
+    font-size: 35px;
+    padding: 45px;
+    color:rgb(0, 0, 0);
+  }
+
+/* Inputs */
+
+/* input:invalid {
+  border: 2px dashed red;
+} */
+
+/* User Profile */
+.dados-pessoais{
+  border-radius: 30px;
+  margin: 35px;
+  padding: 30px;
+  background-color: aliceblue;
+
+}
+
+.experiencia-de-trabalho{
+  border-radius: 30px;
+  margin: 35px;
+  padding: 30px;
+  background-color: aliceblue;
+
+}
+
+.vestimenta {
+  border-radius: 30px;
+  margin: 35px;
+  padding: 30px;
+  background-color: aliceblue;
+}
+
+  /* User Navbar items */
+.sidebar{
+  position:fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  border-right: 1px solid #162636;
+  height: 100%;
+}
+
+.sidebarlink{
+  text-decoration: none;
+  color:rgb(255, 255, 255);
+}
+
+  .navbaritem {
+    padding: 20px;
+    align-items: baseline;
+  }
+
+  .navbaritem:hover {
+    background-color: rgb(116, 119, 240);
+    color:rgb(255, 255, 255);
+    cursor: pointer;
+  }
+
+  .navbaritem span{
+    margin-left: 15px;
+  }
+
+  .navbaricon {
+    width: 25px;
+    height: 25px;
+  }
+
+  @media only screen and (max-width: 768px){
+    .sidebar{
+      width: 60px;
+    }
+    .button-text{
+      display: none;
+    }
+    .sidebar span{
+      display: none;
+    }
+    .sidebar .btn{
+      width: 45px !important;
+      height: 45px !important;
+      border-radius: 50% !important;
+    }
+  }
+
+  @media (min-width: 769px) {
+    /*applied if browser window width is greater than 769px*/
+    .buttonicon {
+        display: none;
+    }
 }
